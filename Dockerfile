@@ -23,4 +23,5 @@ WORKDIR /
 COPY --from=builder /hello-app /hello-app
 ENV PORT 8080
 USER nonroot:nonroot
+TARGET_PORT=8080
 CMD ["/hello-app"]
